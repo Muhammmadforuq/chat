@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  body{
+    @apply font-elza text-brand-default;
+  }
+
+  h1{
+    @apply font-bold text-3xl lg:text-xll xl:text-6xl xl:leading-[4.125rem]
+  }
+
+  h2{
+    @apply font-bold text-xlx xl:text-xll;
+  }
+
+  h3{
+    @apply font-bold text-sm lg:text-xl/6 uppercase;
+  }
+ .card h4{
+    @apply font-medium lg:text-lg xl:text-xls/6;
+  }
+  p{
+    @apply font-medium text-xl/6
+  }
+
+  .header-link a{
+    @apply underline decoration-transparent hover:decoration-brand-default transition-colors ease-linear;
+  }
+
+  .btn{
+    @apply font-semibold text-white leading-4 xl:leading-5 bg-brand-default rounded-full hover:translate-y-1 transition-transform ease-linear p-4;
+  }
+  
+  .tab-active{
+    @apply border-brand-default text-brand-default;
+  }
+
+  .contact input[type=text],
+  .contact input[type=email],
+  .contact select{
+    @apply w-full h-12 rounded-full font-medium border border-brand-gray py-2 px-6;
+  }
+
+  .contact label{
+    @apply block font-medium text-sm;
+  }
+  .footer-link a{
+     @apply underline decoration-transparent hover:decoration-brand-default transition-colors;
+  }
+}
+
